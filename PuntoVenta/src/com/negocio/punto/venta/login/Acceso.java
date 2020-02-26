@@ -116,7 +116,7 @@ public class Acceso extends javax.swing.JFrame {
 
     private void btnAccederActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAccederActionPerformed
         try {
-            Boolean exito = login.Prueba(txtUsuario.getText(), txtPassword.getText());
+            Boolean exito = login.Consulta(txtUsuario.getText(), txtPassword.getText());
             if (exito) {
                 MenuPrincipal men = new MenuPrincipal();
                 men.setVisible(true);
