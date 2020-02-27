@@ -11,6 +11,9 @@ public class Usuario {
     private String nombre;
     private String apellido;
     private boolean admin;
+    private String email;
+    private String password;
+    private boolean activo;
     private static Usuario instance;
 
     public static Usuario getInstance() {
@@ -63,6 +66,30 @@ public class Usuario {
 
     public void setAdmin(boolean admin) {
         this.admin = admin;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public boolean isActivo() {
+        return activo;
+    }
+
+    public void setActivo(boolean activo) {
+        this.activo = activo;
     }
 
 }
